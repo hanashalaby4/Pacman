@@ -1,6 +1,5 @@
 #ifndef BOARD_H
 #define BOARD_H
-
 #include <QGraphicsScene>
 #include <QGraphicsView>
 #include <QFile>
@@ -27,4 +26,3 @@ public:
 };
 
 #endif // BOARD_H
-

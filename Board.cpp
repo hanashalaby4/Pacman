@@ -1,4 +1,4 @@
-#include "Board.h"
+#include "board.h"
 
 board::board(QGraphicsScene * g)
 {
@@ -14,7 +14,7 @@ board::board(QGraphicsScene * g)
     }
 
     //Read board data from txt file and assign it to boardData array
-    QFile file("board.txt");
+    QFile file("C:/Users/Power/Desktop/Project/Board.txt");
     file.open(QIODevice::ReadOnly);
     QString temp;
     QTextStream stream(&file);
@@ -27,22 +27,22 @@ board::board(QGraphicsScene * g)
 
 
     //Creating the board edges and corners pixmaps and setting their size
-    QPixmap edgeImageH("edgeH.png");
+    QPixmap edgeImageH("C:/Users/Power/Desktop/PacmanGame-master/Assets/edgeH.png");
     edgeImageH = edgeImageH.scaledToWidth(blockDim);
     edgeImageH = edgeImageH.scaledToHeight(blockDim);
-    QPixmap edgeImageV("edgeV.png");
+    QPixmap edgeImageV("C:/Users/Power/Desktop/PacmanGame-master/Assets/edgeV.png");
     edgeImageV = edgeImageV.scaledToWidth(blockDim);
     edgeImageV = edgeImageV.scaledToHeight(blockDim);
-    QPixmap cornerImageTL("cornerTL.png");
+    QPixmap cornerImageTL("C:/Users/Power/Desktop/PacmanGame-master/Assets/cornerTL.png");
     cornerImageTL = cornerImageTL.scaledToWidth(blockDim);
     cornerImageTL = cornerImageTL.scaledToHeight(blockDim);
-    QPixmap cornerImageTR("cornerTR.png");
+    QPixmap cornerImageTR("C:/Users/Power/Desktop/PacmanGame-master/Assets/cornerTR.png");
     cornerImageTR = cornerImageTR.scaledToWidth(blockDim);
     cornerImageTR = cornerImageTR.scaledToHeight(blockDim);
-    QPixmap cornerImageBR("cornerBR.png");
+    QPixmap cornerImageBR("C:/Users/Power/Desktop/PacmanGame-master/Assets/cornerBR.png");
     cornerImageBR = cornerImageBR.scaledToWidth(blockDim);
     cornerImageBR = cornerImageBR.scaledToHeight(blockDim);
-    QPixmap cornerImageBL("cornerBL.png");
+    QPixmap cornerImageBL("C:/Users/Power/Desktop/PacmanGame-master/Assets/cornerBL.png");
     cornerImageBL = cornerImageBL.scaledToWidth(blockDim);
     cornerImageBL = cornerImageBL.scaledToHeight(blockDim);
 
@@ -105,4 +105,3 @@ board::~board(){
     delete [] boardData;
 
 }
-

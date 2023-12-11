@@ -10,18 +10,40 @@ CONFIG += c++11
 
 SOURCES += \
     Board.cpp \
-    bullet.cpp \
+    blinky.cpp \
+    collectables.cpp \
     food.cpp \
-    heart.cpp \
+    fruit.cpp \
+    gamemanager.cpp \
+    ghosts.cpp \
+    inky.cpp \
+    lives.cpp \
     main.cpp \
-    player.cpp
+    pinky.cpp \
+    player.cpp \
+    powerpellets.cpp \
+    score.cpp \
+    smallpellets.cpp \
+    state.cpp \
+    text.cpp
 
 HEADERS += \
     Board.h \
-    bullet.h \
+    blinky.h \
+    collectables.h \
     food.h \
-    heart.h \
-    player.h
+    fruit.h \
+    gamemanager.h \
+    ghosts.h \
+    inky.h \
+    lives.h \
+    pinky.h \
+    player.h \
+    powerpellets.h \
+    score.h \
+    smallpellets.h \
+    state.h \
+    text.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
